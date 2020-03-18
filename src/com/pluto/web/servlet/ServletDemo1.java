@@ -9,7 +9,9 @@ import java.io.IOException;
  * @Date 2020/3/19 0:00
  * @Created by Pluto
  */
-public class ServletDemo  implements Servlet {
+//实现servlet接口
+public class ServletDemo1 implements Servlet {
+    //初始化
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
 
@@ -30,6 +32,7 @@ public class ServletDemo  implements Servlet {
         return null;
     }
 
+    //销毁
     @Override
     public void destroy() {
 
