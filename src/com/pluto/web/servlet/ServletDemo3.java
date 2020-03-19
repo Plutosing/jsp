@@ -11,7 +11,7 @@ import java.io.IOException;
  * @Created by Pluto
  */
 @WebServlet("/demo3")
-public class SerletDemo3 implements Servlet {
+public class ServletDemo3 implements Servlet {
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
 
