@@ -24,10 +24,10 @@ public class ServletDemo1 implements Servlet {
 
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
-        //System.out.println("hello servlet");
+        System.out.println(servletRequest);
         int i = servletRequest.getContentLength();
         servletRequest.getParameter("username");
-        System.out.println(servletRequest.getParameter("username"));
+        System.out.println("username："+servletRequest.getParameter("username"));
 
     }
 
