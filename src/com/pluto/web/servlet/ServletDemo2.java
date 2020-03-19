@@ -1,6 +1,7 @@
 package com.pluto.web.servlet;
 
 import javax.servlet.*;
+import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 
 /**
@@ -16,6 +17,7 @@ import java.io.IOException;
  * 尽量不要在Servlet中定义成员变量
  * 即使定义了不要赋值
  */
+@WebServlet("/demo2")
 public class ServletDemo2 implements Servlet {
 
 

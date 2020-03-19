@@ -14,18 +14,5 @@
         <url-pattern>/demo1</url-pattern>
     </servlet-mapping>
 
-    <servlet>
-        <servlet-name>demo2</servlet-name>
-        <servlet-class>com.pluto.web.servlet.ServletDemo2</servlet-class>
-<!--        指定servlet创建时机 默认第一次访问
- 负数 访问时时创建
- 0 正数 启动时
--->
-        <load-on-startup>-5</load-on-startup>
-    </servlet>
-    <!--    servlet路径-->
-    <servlet-mapping>
-        <servlet-name>demo2</servlet-name>
-        <url-pattern>/demo1=2</url-pattern>
-    </servlet-mapping>
+
 </web-app>

@@ -1,17 +1,17 @@
 package com.pluto.web.servlet;
 
 import javax.servlet.*;
+import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 
 /**
- * @Classname ServletDemo
+ * @Classname SerletDemo3
  * @Description TODO
- * @Date 2020/3/19 0:00
+ * @Date 2020/3/19 13:02
  * @Created by Pluto
  */
-//实现servlet接口
-public class ServletDemo1 implements Servlet {
-    //初始化
+@WebServlet("/demo3")
+public class SerletDemo3 implements Servlet {
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
 
@@ -24,11 +24,7 @@ public class ServletDemo1 implements Servlet {
 
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
-        //System.out.println("hello servlet");
-        int i = servletRequest.getContentLength();
-        servletRequest.getParameter("username");
-        System.out.println(servletRequest.getParameter("username"));
-
+        System.out.println("servlet3");
     }
 
     @Override
@@ -36,7 +32,6 @@ public class ServletDemo1 implements Servlet {
         return null;
     }
 
-    //销毁
     @Override
     public void destroy() {
 
