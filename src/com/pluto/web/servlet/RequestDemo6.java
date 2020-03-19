@@ -21,6 +21,9 @@ public class RequestDemo6 extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
        System.out.println("6被访问了");
+
+       //存储数据到request域中
+        req.setAttribute("msg","Hello World");
        //转发到7
         req.getRequestDispatcher("/requestdemo7").forward(req,resp);
     }

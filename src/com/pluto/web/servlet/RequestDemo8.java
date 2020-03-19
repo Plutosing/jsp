@@ -8,22 +8,21 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * @Classname RequestDemo7
+ * @Classname RequestDemo8
  * @Description TODO
- * @Date 2020/3/19 21:56
+ * @Date 2020/3/19 22:14
  * @Created by Pluto
  */
-@WebServlet("/requestdemo7")
-public class RequestDemo7 extends HttpServlet {
+@WebServlet("/requestdemo8")
+public class RequestDemo8  extends HttpServlet {
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //获取数据
-        Object msg = req.getAttribute("msg");
-        System.out.println(msg+"7被访问了");
+        super.doPost(req, resp);
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        this.doPost(req,resp);
+       this.doPost(req,resp);
     }
 }
